@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-const port = 5000
+const port = process.env.PORT || 5000
 
 let videos = [
     {id: 1, title: 'About JS - 01', author: 'it-incubator.eu'},
